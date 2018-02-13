@@ -36,7 +36,8 @@ int main() {
           } else
             printf("\nCorrupted acknowledgement!");
           timer = 0;
-        } else if (c == 3) {
+        } 
+        else if (c == 3) {
           break;
         }
         if (timer == 0) {
@@ -59,7 +60,8 @@ int main() {
         else {
           if (sf == rn) {
             rn++;
-            printf("\nACK%d sent successfully!",rn);
+            ackno=rn;
+            printf("\nACK%d sent successfully!", ackno);
           }
         }
       }
